@@ -72,9 +72,6 @@
           <button style="width: 169px;cursor: pointer;;height: 56px;border-radius: 4px; background-color: #4D5AE5;color: azure; " data-modal-open>Order service</button>
                                          </div>
        
-
-
-        
       </div>
 
     </section>
@@ -82,7 +79,29 @@
 <div class="modal-content">
   <button class="close-btn" data-modal-close>&times;</button>
   
-  <p class="modaltext">Leave your contacts and we will call you back</p>
+<P class="textmodal">Leave your contacts and we will call you back</P>
+
+   <form id="contact-form" class="contact-form">
+
+            <label for="name">Name:</label>
+           
+            <input type="text" id="name" name="name" style="width: 360px; height: 40px;"  required>
+           
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"style="width: 360px; height: 40px; "required>
+         
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"style="width: 360px; height: 40px; " required>
+           
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" style="width: 360px; height: 120px;"></textarea>
+            <div class="modaltermsbox">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I accept the Terms and Conditions of the Privacy Policy</label></div>
+          <div class="sendbtn">
+            <button style="width: 169px;cursor: pointer;;height: 56px;border-radius: 4px; background-color: #4D5AE5;color: azure; " > Send</button></div>
+                                         </div>
+        </form>
 </div>
     </div>
     <main>
@@ -385,7 +404,13 @@
              class="icon"
              aria-label="linkedin-link">
              <svg> 
-             <use href="./icons/symbol-defs.svg#icon-linkedin"> 
+             <use href="./icons/symbol-defs.svg#icon-linkedin">
+             </use>
+             </svg>
+             </a>
+
+             
+  
 
              
 
